@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top 5 Business Ideas — Week 1, 2026 | harsh.solankii</title>
+  <meta name="description" content="Top 5 business ideas of the week, curated by Harsh Solanki. Real costs. Real profits. No bakwas." />
+  <meta property="og:title" content="Top 5 Business Ideas of the Week — harsh.solankii" />
+  <meta property="og:description" content="The business class India never got. Real costs. Real profits. No bakwas." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0C0C0C;
+      --surface: rgba(255,255,255,0.03);
+      --surface-hover: rgba(255,255,255,0.055);
+      --border: rgba(255,255,255,0.07);
+      --border-accent: rgba(247,151,30,0.22);
+      --text-primary: #F5F0E8;
+      --text-secondary: rgba(245,240,232,0.55);
+      --text-muted: rgba(245,240,232,0.28);
+      --accent: #F7971E;
+      --accent-dim: rgba(247,151,30,0.12);
+      --accent-border: rgba(247,151,30,0.28);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── NOISE TEXTURE ── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ── RADIAL GLOW ── */
+    body::after {
+      content: '';
+      position: fixed;
+      top: -200px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;
+      height: 500px;
+      background: radial-gradient(ellipse at center, rgba(247,151,30,0.07) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .page {
+      position: relative;
+      z-index: 1;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 20px 80px;
+    }
+
+    /* ── HEADER ── */
+    .header {
+      padding: 40px 0 32px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .brand-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 30px;
+    }
+
+    .avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #F7971E 0%, #FF6B35 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 17px;
+      color: #0C0C0C;
+      flex-shrink: 0;
+      border: 2px solid rgba(247,151,30,0.35);
+    }
+
+    .brand-info { flex: 1; }
+
+    .brand-name {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      color: var(--text-primary);
+      letter-spacing: 0.01em;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .verified-dot {
+      width: 14px;
+      height: 14px;
+      background: #1DA1F2;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .verified-dot::after {
+      content: '';
+      display: block;
+      width: 5px;
+      height: 8px;
+      border: 1.5px solid white;
+      border-top: none;
+      border-left: none;
+      transform: rotate(45deg) translate(-1px, -1px);
+    }
+
+    .brand-handle {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 2px;
+      letter-spacing: 0.03em;
+    }
+
+    .edition-pill {
+      background: var(--accent-dim);
+      border: 1px solid var(--accent-border);
+      border-radius: 20px;
+      padding: 5px 14px;
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--accent);
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .hero-title {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(34px, 8vw, 44px);
+      font-weight: 800;
+      line-height: 1.05;
+      letter-spacing: -0.025em;
+      color: var(--text-primary);
+      margin-bottom: 10px;
+    }
+
+    .hero-title em {
+      font-style: normal;
+      background: linear-gradient(90deg, #F7971E, #FF6B35);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-sub {
+      font-size: 14px;
+      color: var(--text-secondary);
+      font-weight: 300;
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 18px;
+    }
+
+    .meta-item {
+      font-size: 12px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .meta-item::before {
+      content: '';
+      display: block;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: rgba(247,151,30,0.5);
+    }
+
+    /* ── SECTION LABEL ── */
+    .section-label {
+      font-family: 'Syne', sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin: 28px 0 14px;
+    }
+
+    /* ── IDEA CARDS ── */
+    .ideas-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 22px 22px 16px;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+      animation: fadeUp 0.5s ease both;
+    }
+
+    .card:nth-child(1) { animation-delay: 0.08s; }
+    .card:nth-child(2) { animation-delay: 0.16s; }
+    .card:nth-child(3) { animation-delay: 0.24s; }
+    .card:nth-child(4) { animation-delay: 0.32s; }
+    .card:nth-child(5) { animation-delay: 0.40s; }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .card:hover {
+      background: var(--surface-hover);
+      border-color: var(--border-accent);
+      transform: translateY(-1px);
+    }
+
+    .card.open {
+      background: rgba(247,151,30,0.035);
+      border-color: var(--border-accent);
+    }
+
+    /* shimmer top line */
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent 0%, rgba(247,151,30,0.45) 50%, transparent 100%);
+      opacity: 0;
+      transition: opacity 0.25s;
+    }
+    .card:hover::before, .card.open::before { opacity: 1; }
+
+    .card-rank {
+      font-family: 'Syne', sans-serif;
+      font-size: 10px;
+      font-weight: 800;
+      color: rgba(247,151,30,0.45);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+    .rank-rule { flex: 1; height: 1px; background: rgba(255,255,255,0.05); }
+
+    .card-top {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .icon-box {
+      width: 42px;
+      height: 42px;
+      border-radius: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .ico-orange { background: rgba(247,151,30,0.12); }
+    .ico-green  { background: rgba(52,211,153,0.1); }
+    .ico-pink   { background: rgba(244,114,182,0.1); }
+    .ico-blue   { background: rgba(96,165,250,0.1); }
+    .ico-purple { background: rgba(192,132,252,0.1); }
+
+    .card-title {
+      font-family: 'Syne', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 10px 0 11px;
+    }
+
+    .tag {
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+    .t-orange { background: rgba(247,151,30,0.1); color: #F7971E; border: 1px solid rgba(247,151,30,0.2); }
+    .t-green  { background: rgba(52,211,153,0.09); color: #34D399; border: 1px solid rgba(52,211,153,0.2); }
+    .t-pink   { background: rgba(244,114,182,0.09); color: #F472B6; border: 1px solid rgba(244,114,182,0.2); }
+    .t-blue   { background: rgba(96,165,250,0.09);  color: #60A5FA; border: 1px solid rgba(96,165,250,0.2); }
+    .t-purple { background: rgba(192,132,252,0.09); color: #C084FC; border: 1px solid rgba(192,132,252,0.2); }
+
+    .card-hook {
+      font-size: 13.5px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      font-weight: 300;
+    }
+
+    /* expand toggle */
+    .toggle-row {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-top: 12px;
+      font-size: 12px;
+      font-weight: 500;
+      color: rgba(247,151,30,0.65);
+      letter-spacing: 0.01em;
+      user-select: none;
+    }
+
+    .arrow {
+      display: inline-block;
+      transition: transform 0.22s ease;
+      font-size: 13px;
+    }
+    .card.open .arrow { transform: rotate(180deg); }
+
+    /* expandable body */
+    .card-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.38s ease, opacity 0.3s ease;
+      opacity: 0;
+    }
+    .card.open .card-body {
+      max-height: 600px;
+      opacity: 1;
+    }
+
+    .body-inner {
+      padding-top: 16px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      margin-top: 14px;
+    }
+
+    .stat-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .stat-box {
+      background: rgba(0,0,0,0.25);
+      border: 1px solid rgba(255,255,255,0.05);
+      border-radius: 10px;
+      padding: 12px 14px;
+    }
+
+    .stat-label {
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 5px;
+    }
+
+    .stat-val {
+      font-family: 'Syne', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .detail {
+      font-size: 13.5px;
+      line-height: 1.75;
+      color: rgba(245,240,232,0.58);
+      font-weight: 300;
+    }
+
+    .detail b {
+      color: rgba(245,240,232,0.88);
+      font-weight: 500;
+    }
+
+    .detail p { margin-bottom: 10px; }
+    .detail p:last-child { margin-bottom: 0; }
+
+    /* ── FOOTER ── */
+    .footer {
+      margin-top: 36px;
+      padding: 22px 24px;
+      background: rgba(247,151,30,0.04);
+      border: 1px solid rgba(247,151,30,0.11);
+      border-radius: 16px;
+    }
+
+    .footer-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .footer-brand {
+      font-family: 'Syne', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .footer-text {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      font-weight: 300;
+    }
+
+    .footer-text strong {
+      color: var(--text-secondary);
+      font-weight: 400;
+    }
+
+    .social-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .social-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: background 0.2s;
+      letter-spacing: 0.01em;
+    }
+
+    .btn-ig {
+      background: rgba(225,48,108,0.1);
+      border: 1px solid rgba(225,48,108,0.25);
+      color: #e1306c;
+    }
+    .btn-ig:hover { background: rgba(225,48,108,0.18); }
+
+    .btn-yt {
+      background: rgba(255,0,0,0.08);
+      border: 1px solid rgba(255,0,0,0.2);
+      color: #FF4444;
+    }
+    .btn-yt:hover { background: rgba(255,0,0,0.14); }
+
+    .copyright {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 11px;
+      color: var(--text-muted);
+      letter-spacing: 0.03em;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 480px) {
+      .header { padding: 28px 0 24px; }
+      .hero-title { font-size: 30px; }
+      .card { padding: 18px 18px 14px; }
+      .stat-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="brand-row">
+      <div class="avatar">HS</div>
+      <div class="brand-info">
+        <div class="brand-name">
+          harsh.solankii
+          <span class="verified-dot"></span>
+        </div>
+        <div class="brand-handle">Reel creator · 291K followers</div>
+      </div>
+      <div class="edition-pill">Week 1 · 2026</div>
+    </div>
+
+    <h1 class="hero-title">Top 5 Business<br><em>Ideas of the Week</em></h1>
+    <p class="hero-sub">Asli dhanda. Real insights. No bakwas. — curated from what's actually trending.</p>
+
+    <div class="meta-row">
+      <span class="meta-item">April 21, 2026</span>
+      <span class="meta-item">5 Ideas</span>
+      <span class="meta-item">Free · Weekly Series</span>
+    </div>
+  </header>
+
+  <!-- IDEAS -->
+  <p class="section-label">This week's picks — tap to expand</p>
+
+  <div class="ideas-list">
+
+    <!-- 01 -->
+    <div class="card" onclick="toggle(this)">
+      <div class="card-rank">#01 <span class="rank-rule"></span> Hot Pick</div>
+      <div class="card-top">
+        <div class="icon-box ico-orange">🖨️</div>
+        <div class="card-title">Printing ATM — The Xerox Disruption Nobody's Talking About</div>
+      </div>
+      <div class="tags">
+        <span class="tag t-orange">Automation</span>
+        <span class="tag t-green">Low Capex</span>
+        <span class="tag t-blue">Untapped Market</span>
+      </div>
+      <p class="card-hook">India ke courts, colleges aur offices ke bahar ek aisi machine rakho jo 24/7 paise chhape — bina kisi staff ke, bina bade rent ke.</p>
+      <div class="toggle-row">Full breakdown <span class="arrow">↓</span></div>
+      <div class="card-body">
+        <div class="body-inner">
+          <div class="stat-row">
+            <div class="stat-box">
+              <div class="stat-label">Profit Margin</div>
+              <div class="stat-val">Very High</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-label">Model Type</div>
+              <div class="stat-val">Automated Vending</div>
+            </div>
+          </div>
+          <div class="detail">
+            <p><b>Problem it solves:</b> India mein printout ka bada market hai — lekin unsolved issues hain. Mehenga rent, staff salary, aur privacy risk (log apna Aadhaar chhod aate hain dukaan ke laptop mein).</p>
+            <p><b>The idea:</b> Self-service kiosk — QR scan karo, phone se document upload karo, UPI payment, 60 seconds mein print. Kaam hote hi data machine se automatically delete.</p>
+            <p><b>Best locations:</b> College hostels, IT parks, society gates, courts. Koi badi dukaan nahi chahiye — thodi si jagah rent par aur plug in karo.</p>
+            <p><b>HS take:</b> Ye "ATM model" hai printing ka. Raat ke 2 baje bhi machine kaam kare aur aap so rahe ho. India mein ye business abhi poori tarah untapped hai.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 02 -->
+    <div class="card" onclick="toggle(this)">
+      <div class="card-rank">#02 <span class="rank-rule"></span> Recurring Revenue</div>
+      <div class="card-top">
+        <div class="icon-box ico-green">🚐</div>
+        <div class="card-title">School Van Business — The Subscription Model Nobody Talks About</div>
+      </div>
+      <div class="tags">
+        <span class="tag t-green">Recurring Revenue</span>
+        <span class="tag t-orange">Low Risk</span>
+        <span class="tag t-pink">B2B Contracts</span>
+      </div>
+      <p class="card-hook">Cab chalane mein 30% commission jata hai app ko. School transport mein ek route fix hone ke baad saal bhar ka guaranteed income hai.</p>
+      <div class="toggle-row">Full breakdown <span class="arrow">↓</span></div>
+      <div class="card-body">
+        <div class="body-inner">
+          <div class="stat-row">
+            <div class="stat-box">
+              <div class="stat-label">Revenue Type</div>
+              <div class="stat-val">Subscription</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-label">Competition</div>
+              <div class="stat-val">Very Low</div>
+            </div>
+          </div>
+          <div class="detail">
+            <p><b>Better than cab driving:</b> Ola/Uber mein din bhar traffic + 30% platform cut. School transport mein fixed routes, fixed parents, monthly payment — like a salary from your own business.</p>
+            <p><b>Trust = contracts:</b> Schools certified vehicles ko prefer karti hain. Tata Winger jaisi certified van lene par schools khud aage aakar contract deti hain.</p>
+            <p><b>Tech angle:</b> Fleet tracking app se ghar baith ke gaadi monitor karo. Fuel savings bhi built-in. Eco switch aur GPS tracking sab saath aata hai.</p>
+            <p><b>HS take:</b> Corporate language mein ise "Subscription Model" kehte hain. Parents ke liye iska matlab "Reliability" hai. Ek baar settle ho gaya toh saal bhar ka game sealed.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 03 -->
+    <div class="card" onclick="toggle(this)">
+      <div class="card-rank">#03 <span class="rank-rule"></span> Blue Ocean</div>
+      <div class="card-top">
+        <div class="icon-box ico-pink">🎈</div>
+        <div class="card-title">Giant Balloon Bouquets — Selling "Air" for ₹25,000 a Pop</div>
+      </div>
+      <div class="tags">
+        <span class="tag t-pink">Gifting Industry</span>
+        <span class="tag t-green">80–90% Margin</span>
+        <span class="tag t-purple">Zero Inventory</span>
+      </div>
+      <p class="card-hook">America mein ek aurat sirf hawa bech kar lakhs kamaati hai. India mein abhi koi nahi kar raha — ye gap bahut badi opportunity hai.</p>
+      <div class="toggle-row">Full breakdown <span class="arrow">↓</span></div>
+      <div class="card-body">
+        <div class="body-inner">
+          <div class="stat-row">
+            <div class="stat-box">
+              <div class="stat-label">Profit Margin</div>
+              <div class="stat-val">80–90%</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-label">Inventory Risk</div>
+              <div class="stat-val">Zero</div>
+            </div>
+          </div>
+          <div class="detail">
+            <p><b>The problem it solves:</b> Log birthday aur anniversaries par expensive flowers dete hain jo 2 din mein kachra ban jaate hain. Giant balloon bouquets weeks tak chalte hain aur Instagram pe ekdum fire lagte hain.</p>
+            <p><b>Why margins are insane:</b> Raw material = foil balloons + hawa + thodi si creativity. Cost minimal. Instagram par ye ekdum premium dikhte hain, toh people pay premium prices.</p>
+            <p><b>India pricing:</b> Corporate events, weddings, birthdays ke liye ₹2,000–₹3,000 minimum. Raw material tabhi use karo jab order aur advance payment aaye — no dead stock ever.</p>
+            <p><b>HS take:</b> Gifting industry poori tarah change hone wali hai. First mover advantage abhi bhi available hai India mein. LA, Dubai, New York mein already trend kar raha hai.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 04 -->
+    <div class="card" onclick="toggle(this)">
+      <div class="card-rank">#04 <span class="rank-rule"></span> Future Demand</div>
+      <div class="card-top">
+        <div class="icon-box ico-blue">🏨</div>
+        <div class="card-title">Luxury Senior Living — India's Most Underrated Real Estate Play</div>
+      </div>
+      <div class="tags">
+        <span class="tag t-blue">Real Estate</span>
+        <span class="tag t-orange">NRI Market</span>
+        <span class="tag t-green">Lifetime Cashflow</span>
+      </div>
+      <p class="card-hook">NRI bacchon ke paas andha paisa hai, time nahi. Unke India mein akele rehte parents ke liye luxury senior living — 3 saal ki waiting lists chal rahi hain.</p>
+      <div class="toggle-row">Full breakdown <span class="arrow">↓</span></div>
+      <div class="card-body">
+        <div class="body-inner">
+          <div class="stat-row">
+            <div class="stat-box">
+              <div class="stat-label">Monthly Revenue</div>
+              <div class="stat-val">₹50K–1L/unit</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-label">Model Type</div>
+              <div class="stat-val">Subscription</div>
+            </div>
+          </div>
+          <div class="detail">
+            <p><b>The core insight:</b> Normal real estate mein builder ne flat becha, game khatam. Yahan "Subscription Model" hai — recurring monthly charges for care, food, medical services for life.</p>
+            <p><b>Who's already winning:</b> Antara aur Ashiana jaisi companies samajh gayi hain. 3-year waiting lists hain premium properties ke liye. Ye trend abhi early stage mein hai.</p>
+            <p><b>What they offer:</b> 24/7 doctors, therapists, karaoke nights, tambola clubs, yoga sessions — inki social life aapse bhi better hoti hai.</p>
+            <p><b>HS take:</b> India ki aging population + NRI guilt = demand jo aane wale decades mein sirf badhegi. Antara aur Ashiana ne sahi time par sahi game khela — ab aur players ki zaroorat hai.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 05 -->
+    <div class="card" onclick="toggle(this)">
+      <div class="card-rank">#05 <span class="rank-rule"></span> The Big Shift</div>
+      <div class="card-top">
+        <div class="icon-box ico-purple">📱</div>
+        <div class="card-title">Scroll-Based Commerce — Instagram is India's Next Shopping Mall</div>
+      </div>
+      <div class="tags">
+        <span class="tag t-purple">D2C Brands</span>
+        <span class="tag t-blue">Creators</span>
+        <span class="tag t-orange">Affiliate Links</span>
+      </div>
+      <p class="card-hook">Amazon par "need" se kharidite ho. Instagram par "emotion" se kharidoge. Affiliate links feature ne poora game badal diya — creators ban rahe hain digital malls.</p>
+      <div class="toggle-row">Full breakdown <span class="arrow">↓</span></div>
+      <div class="card-body">
+        <div class="body-inner">
+          <div class="stat-row">
+            <div class="stat-box">
+              <div class="stat-label">US TikTok Shop</div>
+              <div class="stat-val">45% scroll buyers</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-label">India Stage</div>
+              <div class="stat-val">Early — Act Now</div>
+            </div>
+          </div>
+          <div class="detail">
+            <p><b>The shift:</b> Amazon = Intent Buying (zaroorat se). Instagram = Impulse Buying (emotion se). Brands are shifting entire ad budgets to where attention is.</p>
+            <p><b>The opportunity:</b> Instagram's new affiliate links feature lets creators directly tag products in reels. Your favorite creator becomes your digital mall — earning commission on every sale.</p>
+            <p><b>Who benefits most:</b> Creators (passive affiliate income) + D2C brands (lower customer acquisition cost, higher impulse conversion rate).</p>
+            <p><b>HS take:</b> US mein TikTok Shop ne aag laga rakhi hai. India mein ye abhi shuru ho raha hai. Pehle aaoge, zyada kamaaoge. Brands aur creators dono ke liye window is open right now.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">Harsh Solanki | Business Decoder</div>
+      <div class="edition-pill" style="font-size:10px;">Weekly Series</div>
+    </div>
+    <p class="footer-text">
+      <strong>The business class India never got.</strong><br>
+      Real costs. Real profits. No bakwas. — 291K already enrolled. New edition every week. Follow to stay ahead.
+    </p>
+    <div class="social-row">
+      <a class="social-btn btn-ig" href="https://instagram.com/harsh.solankii" target="_blank" rel="noopener">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        @harsh.solankii
+      </a>
+      <a class="social-btn btn-yt" href="https://www.youtube.com/@HarshSolankiOfficial" target="_blank" rel="noopener">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        YouTube
+      </a>
+    </div>
+  </footer>
+
+  <p class="copyright">© 2026 harsh.solankii · New edition every week</p>
+
+</div>
+
+<script>
+  function toggle(card) {
+    const isOpen = card.classList.contains('open');
+    document.querySelectorAll('.card.open').forEach(c => c.classList.remove('open'));
+    if (!isOpen) card.classList.add('open');
+  }
+</script>
+</body>
+</html>
